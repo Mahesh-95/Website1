@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<link rel="stylesheet" href="css/Style_Website_1.css">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+</head>
+<body>
+	<div>
+		<div class="topnav" id="myTopnav">
+		  <a href="#home" class="active">Home</a>
+		  <a href="#news">News</a>
+		  <a href="#contact">Contact </a>
+		  <a href="#about">About</a>
+		  <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+			<i class="fa fa-bars"></i>
+		  </a>
+		  <div class="drpdwn">
+			<button class="morebtn">More <i class="fa fa-caret-down"></i></button>
+				<div class="dropdown-content">
+					<a href="#">Link 1</a>
+					<a href="#">Link 2</a>
+					<a href="#">Link 3</a>
+				</div>
+			
+		  </div>
+		  
+		  <div class="searchbar">
+			<input class="searchinput" type="text" placeholder="  Search...." name="search">
+			<button class="searchicon" type="submit"><i class="fa fa-search"></i></button>
+		</div>
+		<a href="#" style="float:right">Login</a>
+		</div>
+	</div>
+	<div class="slideshow-container">
+		<div class="mySlides fade" >
+			<div class="numbertext">1/3</div>
+			<img class="slideimg" src="images/img_nature_wide.jpg" alt="nature">
+			<div class="text">Welcome</div>
+		</div>
+		<div class="mySlides fade" >
+			<div class="numbertext">2/3</div>
+			<img class="slideimg" src="images/img_snow_wide.jpg" alt="snow">
+			<div class="text">Welcome</div>
+		</div>
+		<div class="mySlides fade" >
+			<div class="numbertext">3/3</div>
+			<img class="slideimg" src="images/img_mountains_wide.jpg" alt="nature">
+			<div class="text">Welcome</div>
+		</div>
+		
+		<a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+		<a class="next" onclick="plusSlides(1)">&#10095;</a>
+
+	</div>
+	
+	<br>
+
+	<div style="text-align:center">
+		<span class="dot" onclick="currentSlide(1)"></span> 
+		<span class="dot" onclick="currentSlide(2)"></span> 
+		<span class="dot" onclick="currentSlide(3)"></span> 
+	</div>
+	<div class="nature_col">
+		<h2>The Nature</h2>
+		<p style="color:grey"> “To walk into nature is to witness a thousand miracles.” -Mary Davis</p>
+	</div>
+	<div class="img_detail">
+		<img class="img_col" src="images/forest.jpg" alt="forest">
+		<p class="detail_col">A forest is a piece of land with many trees. ... Forests are very important and grow in many places around the world. They are an ecosystem which includes many plants and animals. Temperature and rainfall are the two most important things for forests.</p>	
+	</div>
+	<div class="img_detail">
+		<p class="detail_col">A beach is a landform alongside a body of water which consists of loose particles. The particles composing a beach are typically made from rock, such as sand, gravel, shingle, pebbles. The particles can also be biological in origin, such as mollusc shells or coralline algae.</p>
+		<img class="img_col" src="images/beach.jpg" alt="beach">
+	</div>
+	<div class="img_detail">
+		<img class="img_col" src="images/waterfall.jpg" alt="waterfall">
+		<p class="detail_col">A waterfall is a river or other body of water's steep fall over a rocky ledge into a plunge pool below. Waterfalls are also called cascades. The process of erosion, the wearing away of earth, plays an important part in the formation of waterfalls. ... Often, waterfalls form as streams flow from soft rock to hard rock.</p>	
+	</div>
+	<br>
+	<div style="text-align:center"><h2>Places</h2><hr style="width:150px;border:2px solid black; margin:20px auto"></hr></div>
+		<div class="row">
+			<div class="column">
+				<img style="width:100%;height:200px;border:2px solid black; " src="images/nature1.jpg" alt="nature1">
+				<p style="text-align:center">Nature 1</p>
+			</div>
+			<div class="column">
+				<img style="width:100%;height:200px;border:2px solid black;" src="images/nature2.jpg" alt="nature2">
+				<p style="text-align:center">Nature 2</p>
+			</div>
+			<div class="column">
+				<img style="width:100%;height:200px;border:2px solid black;"src="images/nature3.jpg" alt="nature3">
+				<p style="text-align:center">Nature 3</p>
+			</div>
+			<div class="column">
+				<img style="width:100%;height:200px;border:2px solid black;" src="images/nature1.jpg" alt="nature1">
+				<p style="text-align:center">Nature 4</p>
+			</div>
+			<div class="column">
+				<img style="width:100%;height:200px;border:2px solid black;" src="images/nature2.jpg" alt="nature2">
+				<p style="text-align:center">Nature 5</p>
+			</div>
+			<div class="column">
+				<img style="width:100%;height:200px;border:2px solid black;"src="images/nature3.jpg" alt="nature3">
+				<p style="text-align:center">Nature 6</p>
+			</div>
+	
+	</div>
+	
+		
+		<div>
+			<div class="container">
+				<div>
+					<h2 style="text-align:center">Contact</h2>
+				</div>
+				<form action="/action_page.php">
+					<label for="fname">First Name</label>
+					<input class="inptext" type="text" id="fname" name="firstname" required placeholder="Your name...">
+					<br>
+					<label for="lname">Last Name</label>
+					<input class="inptext" type="text" id="lname" name="lastname" required placeholder="Your last name...">
+					<br>
+					<label for="email">Email</label>
+					<input class="inptext" type="text" id="email" name="email" required placeholder="Your email id...">
+					<br>
+					<label for="message">Message</label>
+					<textarea class="inptext" id="message" name="message" required placeholder="Message......" style="height:100px;"></textarea>
+					<br>
+					<input class="sub" type="submit" value="Submit">
+				</form>
+			</div>
+		<div>
+		
+	<img src="images/map.jpg" alt="map" style="width:100%">
+	
+	<div class="w3-container w3-padding-64 w3-center w3-opacity w3-light-grey w3-xlarge">
+		<i class="fa fa-facebook-official w3-hover-opacity"></i>
+		<i class="fa fa-instagram w3-hover-opacity"></i>
+		<i class="fa fa-snapchat w3-hover-opacity"></i>
+		<i class="fa fa-pinterest-p w3-hover-opacity"></i>
+		<i class="fa fa-twitter w3-hover-opacity"></i>
+		<i class="fa fa-linkedin w3-hover-opacity"></i>
+		<p class="w3-medium">Powered by <a href="#" target="_blank">Nature</a></p>
+	</div>
+	
+<script>
+function myFunction() {
+  var x = document.getElementById("myTopnav");
+  if (x.className === "topnav") {
+    x.className += " responsive";
+  } else {
+    x.className = "topnav";
+  }
+}
+
+var slideIndex = 1;
+showSlides(slideIndex);
+
+function plusSlides(n) {
+  showSlides(slideIndex += n);
+}
+
+function currentSlide(n) {
+  showSlides(slideIndex = n);
+}
+
+function showSlides(n) {
+  var i;
+  var slides = document.getElementsByClassName("mySlides");
+  var dots = document.getElementsByClassName("dot");
+  if (n > slides.length) {slideIndex = 1}    
+  if (n < 1) {slideIndex = slides.length}
+  for (i = 0; i < slides.length; i++) {
+      slides[i].style.display = "none";  
+  }
+  for (i = 0; i < dots.length; i++) {
+      dots[i].className = dots[i].className.replace(" active", "");
+  }
+  slides[slideIndex-1].style.display = "block";  
+  dots[slideIndex-1].className += " active";
+}
+</script>
+
+</body>
+</html>
